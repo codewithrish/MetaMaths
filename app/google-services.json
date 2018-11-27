@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "283243836522",
+    "firebase_url": "https://metamath-a0091.firebaseio.com",
+    "project_id": "metamath-a0091",
+    "storage_bucket": "metamath-a0091.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283243836522:android:248d96ec6c4532cb",
+        "android_client_info": {
+          "package_name": "com.example.lab.metamaths"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283243836522-fgd5khqvhptiliucnpo6nbr2970bjcd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB32MDyzMgqXRBp1nFKPuxtOtsQhUOaikA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
