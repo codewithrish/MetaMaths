@@ -33,7 +33,7 @@ public class ShowGraph extends GraphActivity {
 
         final Graph graph = new Graph();
 
-        for (int i = 0; i < 0; i++) {
+        /*for (int i = 0; i < 0; i++) {
             map.put(nodes_values.get(i), new Node(nodes_values.get(i)));
 
             final Node temp = new Node(nodes_values.get(i));
@@ -50,12 +50,13 @@ public class ShowGraph extends GraphActivity {
                     graph.addEdge(temp, temp1);
                 } else {
                     Node temp1 = new Node(concat_list.get(j));
-                    graph.addEdge(temp, temp1);
                 }
 
+                graph.addEdge(temp, new Node(concat_list.get(j)));
+                //graph.addEdge(new Node(getNodeText()), new Node(getNodeText()));
                 Log.i(TAG, temp + "createGraph: " + new Node(concat_list.get(j)));
             }
-        }
+        }*/
 
         for (int i = 1; i< nodes_values.size(); i++) {
             final Node temp = new Node(nodes_values.get(i));
