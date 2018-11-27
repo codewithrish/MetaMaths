@@ -53,8 +53,6 @@ public class ShowGraph extends GraphActivity {
                     graph.addEdge(temp, temp1);
                 }
 
-                graph.addEdge(temp, new Node(concat_list.get(j)));
-                //graph.addEdge(new Node(getNodeText()), new Node(getNodeText()));
                 Log.i(TAG, temp + "createGraph: " + new Node(concat_list.get(j)));
             }
         }
