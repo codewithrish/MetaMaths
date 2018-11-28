@@ -33,32 +33,37 @@ public class ShowGraph extends GraphActivity {
 
         final Graph graph = new Graph();
 
-        /*for (int i = 0; i < 0; i++) {
-            map.put(nodes_values.get(i), new Node(nodes_values.get(i)));
 
+        for (int i = 0; i < nodes_values.size(); i++) {
             final Node temp = new Node(nodes_values.get(i));
+            map.put(nodes_values.get(i), temp);
+
+
             final ArrayList<String> temp_in_edges = nodes_data.get(i).getIn_edges();
             final ArrayList<String> temp_out_edges = nodes_data.get(i).getOut_edges();
+
             final ArrayList<String> concat_list = new ArrayList<>();
             concat_list.addAll(temp_in_edges);
             concat_list.addAll(temp_out_edges);
 
+
             for (int j = 0; j < concat_list.size(); j++) {
 
+                final Node temp1;
+
                 if (map.containsKey(concat_list.get(j))) {
-                    Node temp1 = map.get(concat_list.get(j));
+                    temp1 = map.get(concat_list.get(j));
                     graph.addEdge(temp, temp1);
                 } else {
-                    Node temp1 = new Node(concat_list.get(j));
+                    temp1 = new Node(concat_list.get(j));
+                    map.put(concat_list.get(j), temp1);
                 }
-
-                graph.addEdge(temp, new Node(concat_list.get(j)));
-                //graph.addEdge(new Node(getNodeText()), new Node(getNodeText()));
+                graph.addEdge(temp, temp1);
                 Log.i(TAG, temp + "createGraph: " + new Node(concat_list.get(j)));
             }
-        }*/
+        }
 
-        for (int i = 1; i< nodes_values.size(); i++) {
+        /*for (int i = 1; i< nodes_values.size(); i++) {
             final Node temp = new Node(nodes_values.get(i));
             final ArrayList<String> temp_in_edges = nodes_data.get(i).getIn_edges();
             final ArrayList<String> temp_out_edges = nodes_data.get(i).getOut_edges();
@@ -74,7 +79,7 @@ public class ShowGraph extends GraphActivity {
 
             Log.i(TAG, "createGraph: \n\n\nn\n\n");
 
-        }
+        }*/
 
 
         return graph;
